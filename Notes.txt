@@ -1,0 +1,30 @@
+Maps
+Initialize a map with map <type, type> name;
+Example: map<int, int> mapTest;
+
+Return iterator to first element in map with name.begin();
+Example: mapTest.begin();
+
+Return an iterator to element after last element in map with name.end();
+Example: mapTest.end()
+
+Return number of elements in a map with name.size()
+Example: mapTest.size()
+
+Return maximum possible size of the map with name.max_size()
+Example: mapTest.max_size()
+
+Return whether or not the map is empty with map.empty()
+Example: mapTest.empty()
+
+Add a new element to the map with pair insert(keyValue, mapValue)
+Example: mapTest.insert(pair<int, int>(1,10));
+
+Removes the element at position pointed by the iterator with erase(iterator position)
+Example: mapTest.erase(itr);
+
+Removes the key value 'g' from the map with erase(const g)
+Example: mapTest.erase(g)
+
+Remove all the elements from the map with mapTest.clear()
+Example: mapTest.clear()
