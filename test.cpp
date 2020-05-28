@@ -34,7 +34,6 @@ int main()
     for(itr = mapTest4.begin(); itr !=mapTest4.end(); itr++)
     {
       cout << '\t' << itr->first << '\t' << itr->second << endl;
-      mapTest4.erase(itr);
     }
     cout << mapTest4.lower_bound(5)->first << '\t' << mapTest4.lower_bound(5)->second << endl;
     cout << mapTest4.upper_bound(5)->first << '\t' << mapTest4.upper_bound(5)->second << endl;
@@ -45,6 +44,9 @@ int main()
     int maxMapSize = mapTest4.max_size();
     cout << "The size of Map 4 is " << mapSize << endl;
     cout << "The maximum size of Map 4 is " << maxMapSize << endl;
+    cout << "Is Map 4 empty: " << boolalpha << mapTest4.empty() << endl;
+    cout << "Clearing Map 4..." << endl;
+    mapTest4.clear();
     cout << "Is Map 4 empty: " << boolalpha << mapTest4.empty() << endl;
     
     return 0;

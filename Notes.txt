@@ -28,3 +28,59 @@ Example: mapTest.erase(g)
 
 Remove all the elements from the map with mapTest.clear()
 Example: mapTest.clear()
+
+Iterators and Vectors
+Initialize a vector with vector<type> name = {element1, element2};
+Example: vector<int> arr = {1, 2, 3, 4, 5};
+
+Initialize a iterator with type::iterator name;
+Example: vector<int>::iterator itr;
+
+Assign new values to vector elements by replacing old ones with assign()
+Example: vectorName.assign(# of times, value);
+
+Push elements to the back of the vector with push_back()
+Example: vectorName.push_back(value);
+
+Pop element at the back of the vector with pop_back()
+Example: vectorName.pop_back();
+
+Insert new elements before element at specified position with insert()
+Example: vectorName.insert(vectorName.begin(), value);
+
+Remove elements from a container at specified position or range with erase()
+Example: vectorName.erase(vectorName.begin());
+
+Swap contents of one vector to another vector with same type with swap()
+Example: vect1.swap(vect2);
+
+Extend a container by inserting a new element at a position with emplace()
+Example: vectorName.emplace(vectorName.begin(), value);
+
+Extend a container by inserting a new element at the back with emplace_back()
+Example: vectorName.emplace_back(value);
+
+Vector Element Access
+[x] will return a reference to element at position 'x'
+Example:
+vector = {1, 2, 3, 4, 5};
+cout << vector[2];
+> 3
+
+at(x) will return a reference element to position 'x'
+Example:
+vector = {1, 2, 3, 4, 5};
+cout << vector.at(2);
+> 3
+
+front() will return a reference to the first element in the vector
+Example:
+vector = {1, 2, 3, 4, 5};
+cout << vector.front()
+> 1
+
+back() will return a reference to the last element in the vector
+Example:
+vector = {1, 2, 3, 4, 5};
+cout << vector.back()
+> 5
